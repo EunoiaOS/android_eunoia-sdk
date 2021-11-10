@@ -57,8 +57,6 @@ public class EunoiaSettingsProvider extends ContentProvider {
     public static final String TAG = "EunoiaSettingsProvider";
     private static final boolean LOCAL_LOGV = false;
 
-    private static final String SHARED_PREF_NAME_OLD = "CMSettingsProvider";
-
     private static final boolean USER_CHECK_THROWS = true;
 
     public static final String PREF_HAS_MIGRATED_EUNOIA_SETTINGS =
@@ -152,9 +150,6 @@ public class EunoiaSettingsProvider extends ContentProvider {
         if (!hasMigratedEunoiaSettings) {
             long startTime = System.currentTimeMillis();
 
-            // Remove any lingering old shared_prefs file
-            getContext().deleteSharedPreferences(SHARED_PREF_NAME_OLD);
-
             for (UserInfo user : mUserManager.getUsers()) {
                 migrateEunoiaSettingsForUser(user.id);
             }
@@ -174,18 +169,6 @@ public class EunoiaSettingsProvider extends ContentProvider {
     private void migrateEunoiaSettingsForUser(int userId) {
         synchronized (this) {
             if (LOCAL_LOGV) Log.d(TAG, "Eunoia settings will be migrated for user id: " + userId);
-
-            // Rename database files (if needed)
-            EunoiaDatabaseHelper dbHelper = mDbHelpers.get(userId);
-            if (dbHelper != null) {
-                dbHelper.close();
-                mDbHelpers.delete(userId);
-            }
-            EunoiaDatabaseHelper.migrateDbFiles(getContext(), userId);
-            if (dbHelper != null) {
-                establishDbTracking(userId);
-                dbHelper = null;
-            }
 
             // Migrate system settings
             int rowsMigrated = migrateEunoiaSettingsForTable(userId,
