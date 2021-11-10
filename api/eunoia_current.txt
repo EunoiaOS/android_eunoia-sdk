@@ -340,7 +340,6 @@ package eunoiaos.platform {
     field public static final java.lang.String MANAGE_LIVEDISPLAY = "eunoiaos.permission.MANAGE_LIVEDISPLAY";
     field public static final java.lang.String MANAGE_REMOTE_PREFERENCES = "eunoiaos.permission.MANAGE_REMOTE_PREFERENCES";
     field public static final java.lang.String MODIFY_PROFILES = "eunoiaos.permission.MODIFY_PROFILES";
-    field public static final java.lang.String PERFORMANCE_ACCESS = "eunoiaos.permission.PERFORMANCE_ACCESS";
     field public static final java.lang.String TRUST_INTERFACE = "eunoiaos.permission.TRUST_INTERFACE";
     field public static final java.lang.String WRITE_SECURE_SETTINGS = "eunoiaos.permission.WRITE_SECURE_SETTINGS";
     field public static final java.lang.String WRITE_SETTINGS = "eunoiaos.permission.WRITE_SETTINGS";

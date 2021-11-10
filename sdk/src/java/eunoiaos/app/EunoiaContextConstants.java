@@ -57,13 +57,6 @@ public final class EunoiaContextConstants {
     public static final String EUNOIA_HARDWARE_SERVICE = "eunoiahardware";
 
     /**
-     * Control device power profile and characteristics.
-     *
-     * @hide
-     */
-    public static final String EUNOIA_PERFORMANCE_SERVICE = "eunoiaperformance";
-
-    /**
      * Manages display color adjustments
      *
      * @hide
@@ -118,14 +111,6 @@ public final class EunoiaContextConstants {
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String PROFILES = "com.eunoiaos.profiles";
-
-        /**
-         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
-         * {@link PackageManager#hasSystemFeature}: The device includes the eunoia performance service
-         * utilized by the eunoiaosdk.
-         */
-        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
-        public static final String PERFORMANCE = "com.eunoiaos.performance";
 
         /**
          * Feature for {@link PackageManager#getSystemAvailableFeatures} and

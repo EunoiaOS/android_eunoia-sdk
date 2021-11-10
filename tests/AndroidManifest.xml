@@ -24,7 +24,6 @@
     <uses-permission android:name="eunoiaos.permission.HARDWARE_ABSTRACTION_ACCESS" />
     <uses-permission android:name="eunoiaos.permission.MODIFY_PROFILES" />
     <uses-permission android:name="eunoiaos.permission.MANAGE_PERSISTENT_STORAGE" />
-    <uses-permission android:name="eunoiaos.permission.PERFORMANCE_ACCESS" />
     <uses-permission android:name="eunoiaos.permission.MANAGE_LIVEDISPLAY" />
     <uses-permission android:name="android.permission.STATUS_BAR_SERVICE" />
 
