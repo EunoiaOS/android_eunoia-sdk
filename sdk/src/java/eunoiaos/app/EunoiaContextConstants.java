@@ -122,14 +122,6 @@ public final class EunoiaContextConstants {
 
         /**
          * Feature for {@link PackageManager#getSystemAvailableFeatures} and
-         * {@link PackageManager#hasSystemFeature}: The device includes the Eunoia audio extensions
-         * utilized by the eunoiaosdk.
-         */
-        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
-        public static final String AUDIO = "com.eunoiaos.audio";
-
-        /**
-         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
          * {@link PackageManager#hasSystemFeature}: The device includes the eunoia trust service
          * utilized by the eunoiaosdk.
          */

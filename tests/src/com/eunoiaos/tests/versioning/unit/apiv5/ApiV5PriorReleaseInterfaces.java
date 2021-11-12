@@ -39,14 +39,6 @@ public class ApiV5PriorReleaseInterfaces {
         // ELDERBERRY BEGIN
     }
 
-    //EunoiaAudioManager Aidl (IEunoiaAudioService)
-    static {
-        Map<String, Integer> eunoia.udioService =
-                getInternalInterfaceMap("IEunoiaAudioService");
-        //ELDERBERRY BEGIN
-        eunoia.udioService.put("listAudioSessions", 1);
-    }
-
     //RequestInfoListener Aidl (IRequestInfoListener)
     static {
         Map<String, Integer> requestInfoListener =
