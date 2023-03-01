@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2015, The CyanogenMod Project
- *               2017-2022 The LineageOS Project
+ *               2017-2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -82,6 +82,17 @@ public final class EunoiaContextConstants {
     public static final String EUNOIA_TRUST_INTERFACE = "eunoiatrust";
 
     /**
+     * Use with {@link android.content.Context#getSystemService} to retrieve a
+     * {@link eunoiaos.health.HealthInterface} to access the Health interface.
+     *
+     * @see android.content.Context#getSystemService
+     * @see eunoiaos.health.HealthInterface
+     *
+     * @hide
+     */
+    public static final String EUNOIA_HEALTH_INTERFACE = "eunoiahealth";
+
+    /**
      * Update power menu (GlobalActions)
      *
      * @hide
@@ -155,5 +166,13 @@ public final class EunoiaContextConstants {
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String GLOBAL_ACTIONS = "com.eunoiaos.globalactions";
+
+        /**
+         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
+         * {@link PackageManager#hasSystemFeature}: The device includes the eunoia health
+         * service utilized by the eunoia sdk and EunoiaParts.
+         */
+        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
+        public static final String HEALTH = "com.eunoiaos.health";
     }
 }
