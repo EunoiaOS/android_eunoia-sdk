@@ -77,20 +77,6 @@
         <item>com.google.android.gsf|com.google.android.talk</item>
     </string-array>
 
-    <!-- Trusted accents package names -->
-    <string-array name="trusted_accent_packages" translatable="false">
-        <item>com.eunoiaos.overlay.accent.red</item>
-        <item>com.eunoiaos.overlay.accent.pink</item>
-        <item>com.eunoiaos.overlay.accent.purple</item>
-        <item>com.eunoiaos.overlay.accent.blue</item>
-        <item>com.eunoiaos.overlay.accent.cyan</item>
-        <item>com.eunoiaos.overlay.accent.green</item>
-        <item>com.eunoiaos.overlay.accent.orange</item>
-        <item>com.eunoiaos.overlay.accent.yellow</item>
-        <item>com.eunoiaos.overlay.accent.brown</item>
-        <item>com.eunoiaos.overlay.accent.black</item>
-    </string-array>
-
     <!-- Array of keycodes for special keys on device.
          Order & size must match with keyhandler_packages -->
     <integer-array name="keyhandler_keycodes">
