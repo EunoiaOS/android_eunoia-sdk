@@ -386,6 +386,7 @@ public class EunoiaDatabaseHelper extends SQLiteOpenHelper{
         // The global table only exists for the 'owner' user
         if (mUserHandle == UserHandle.USER_SYSTEM) {
             loadGlobalSettings(db);
+            loadRestrictedNetworkingModeSetting();
         }
     }
 
@@ -465,7 +466,6 @@ public class EunoiaDatabaseHelper extends SQLiteOpenHelper{
             stmt = db.compileStatement("INSERT OR IGNORE INTO global(name,value)"
                     + " VALUES(?,?);");
             // Global
-            loadRestrictedNetworkingModeSetting();
         } finally {
             if (stmt != null) stmt.close();
         }
