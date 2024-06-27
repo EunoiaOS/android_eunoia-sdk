@@ -20,7 +20,7 @@ import java.util.ArrayList;
  * Created by adnan on 11/16/15.
  */
 public class SettingsConstants {
-    public static final String LINEAGESETTINGS_AUTHORITY = "lineagesettings";
+    public static final String EUNOIASETTINGS_AUTHORITY = "eunoiasettings";
     public static final String SETTINGS_AUTHORITY = "settings";
     public static final String CONTENT_URI = "content://";
     public static final String SYSTEM = "/system";

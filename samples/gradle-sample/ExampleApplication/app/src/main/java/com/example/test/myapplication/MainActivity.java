@@ -19,15 +19,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-import lineageos.app.LineageStatusBarManager;
-import lineageos.app.CustomTile;
-import lineageos.app.Profile;
-import lineageos.app.ProfileManager;
-import lineageos.profiles.ConnectionSettings;
+import eunoiaos.app.EunoiaStatusBarManager;
+import eunoiaos.app.CustomTile;
+import eunoiaos.app.Profile;
+import eunoiaos.app.ProfileManager;
+import eunoiaos.profiles.ConnectionSettings;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private LineageStatusBarManager mLineageStatusBarManager;
+    private EunoiaStatusBarManager mEunoiaStatusBarManager;
     private Button mPublishRemoteViewButton;
 
     private ProfileManager mProfileMangager;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         // CUSTOM TILES
-        mLineageStatusBarManager = LineageStatusBarManager.getInstance(this);
+        mEunoiaStatusBarManager = EunoiaStatusBarManager.getInstance(this);
         mPublishRemoteViewButton = (Button) findViewById(R.id.publish_remote_view_tile);
         mPublishRemoteViewButton.setOnClickListener(this);
 
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setExpandedStyle(remoteExpandedStyle)
                         .build();
 
-                mLineageStatusBarManager.publishTile(1337, customTile);
+                mEunoiaStatusBarManager.publishTile(1337, customTile);
                 break;
             case R.id.publish_ap_triggered_profile:
                 mProfile = new Profile("Enable Bluetooth on WiFi connect");

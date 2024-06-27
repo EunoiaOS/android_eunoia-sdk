@@ -37,13 +37,13 @@
 # *****************************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST ABOVE THE BANNER
 # *****************************************************************
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/APPS/org.lineageos.platform-res_intermediates)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform_intermediates)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform.sdk_intermediates)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform.internal_intermediates)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/lineage-sdk_stubs_current_intermediates)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform_intermediates)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform.sdk_intermediates)
-# Purge out the api stubs timestamp files (they're used as a dependency for checkapi-lineage)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/lineage-api-stubs*)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/lineage-system-api-stubs*)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/APPS/com.eunoiaos.platform-res_intermediates)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/com.eunoiaos.platform_intermediates)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/com.eunoiaos.platform.sdk_intermediates)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/com.eunoiaos.platform.internal_intermediates)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/eunoia-sdk_stubs_current_intermediates)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/com.eunoiaos.platform_intermediates)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/com.eunoiaos.platform.sdk_intermediates)
+# Purge out the api stubs timestamp files (they're used as a dependency for checkapi-eunoia)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/eunoia-api-stubs*)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/eunoia-system-api-stubs*)

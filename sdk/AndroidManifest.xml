@@ -17,6 +17,6 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lineageos.library">
+    package="eunoiaos.library">
     <uses-sdk android:minSdkVersion="4" />
 </manifest>

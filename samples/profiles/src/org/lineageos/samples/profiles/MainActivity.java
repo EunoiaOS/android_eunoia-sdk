@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.samples.profiles;
+package com.eunoiaos.samples.profiles;
 
 import android.app.Activity;
 import android.content.Context;
@@ -24,9 +24,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import lineageos.app.Profile;
-import lineageos.app.ProfileManager;
-import lineageos.profiles.ConnectionSettings;
+import eunoiaos.app.Profile;
+import eunoiaos.app.ProfileManager;
+import eunoiaos.profiles.ConnectionSettings;
 
 import java.util.ArrayList;
 import java.util.List;

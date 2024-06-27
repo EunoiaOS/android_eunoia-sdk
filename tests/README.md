@@ -1,7 +1,7 @@
-## Lineage Platform SDK Tests
+## Eunoia Platform SDK Tests
 The tests package contains both functional manual tests as well as unit
 tests which can be ran utilizing the InstrumentationTestRunner from android.
 
 To run the tests (on a live device):
   
-  ```adb shell am instrument -w org.lineageos.tests/androidx.test.runner.AndroidJUnitRunner```
+  ```adb shell am instrument -w com.eunoiaos.tests/androidx.test.runner.AndroidJUnitRunner```

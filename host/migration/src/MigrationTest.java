@@ -30,9 +30,9 @@ class MigrationTest {
 
     public static final boolean DEBUG = true;
 
-    private static ArrayList<Setting> lineageSystemSettingList = new ArrayList<Setting>();
-    private static ArrayList<Setting> lineageSecureSettingList = new ArrayList<Setting>();
-    private static ArrayList<Setting> lineageGlobalSettingList = new ArrayList<Setting>();
+    private static ArrayList<Setting> eunoiaSystemSettingList = new ArrayList<Setting>();
+    private static ArrayList<Setting> eunoiaSecureSettingList = new ArrayList<Setting>();
+    private static ArrayList<Setting> eunoiaGlobalSettingList = new ArrayList<Setting>();
 
     private static ArrayList<Setting> legacySystemSettings = new ArrayList<Setting>();
     private static ArrayList<Setting> legacySecureSettings = new ArrayList<Setting>();
@@ -74,20 +74,20 @@ class MigrationTest {
         //Read settings
         legacySettings.execute();
 
-        SettingImageCommands legacyToLineageSettings =
+        SettingImageCommands legacyToEunoiaSettings =
                 new SettingImageCommands(SettingsConstants.SETTINGS_AUTHORITY);
         //For each example setting in the table, add inserts
         for (Setting setting : legacySystemSettings) {
-            legacyToLineageSettings.addInsert(SettingsConstants.SYSTEM, setting);
+            legacyToEunoiaSettings.addInsert(SettingsConstants.SYSTEM, setting);
         }
         for (Setting setting : legacySecureSettings) {
-            legacyToLineageSettings.addInsert(SettingsConstants.SECURE, setting);
+            legacyToEunoiaSettings.addInsert(SettingsConstants.SECURE, setting);
         }
         for (Setting setting : legacyGlobalSettings) {
-            legacyToLineageSettings.addInsert(SettingsConstants.GLOBAL, setting);
+            legacyToEunoiaSettings.addInsert(SettingsConstants.GLOBAL, setting);
         }
         //Write them to the database for verification later
-        legacyToLineageSettings.execute();
+        legacyToEunoiaSettings.execute();
 
         //Force update
         DebuggingCommands updateRom = new DebuggingCommands();
@@ -102,20 +102,20 @@ class MigrationTest {
         updateRom.execute();
 
         //Requery
-        SettingImageCommands lineageSettingImage =
-                new SettingImageCommands(SettingsConstants.LINEAGESETTINGS_AUTHORITY);
-        lineageSettingImage.addQuery(SettingsConstants.SYSTEM, lineageSystemSettingList);
-        lineageSettingImage.addQuery(SettingsConstants.SECURE, lineageSecureSettingList);
-        lineageSettingImage.addQuery(SettingsConstants.GLOBAL, lineageGlobalSettingList);
-        lineageSettingImage.execute();
+        SettingImageCommands eunoiaSettingImage =
+                new SettingImageCommands(SettingsConstants.EUNOIASETTINGS_AUTHORITY);
+        eunoiaSettingImage.addQuery(SettingsConstants.SYSTEM, eunoiaSystemSettingList);
+        eunoiaSettingImage.addQuery(SettingsConstants.SECURE, eunoiaSecureSettingList);
+        eunoiaSettingImage.addQuery(SettingsConstants.GLOBAL, eunoiaGlobalSettingList);
+        eunoiaSettingImage.execute();
 
         //Validate
         System.out.println("\n\nValidating " + SettingsConstants.SYSTEM + "...");
-        validate(legacySystemSettings, lineageSystemSettingList);
+        validate(legacySystemSettings, eunoiaSystemSettingList);
         System.out.println("\n\nValidating " + SettingsConstants.SECURE + "...");
-        validate(legacySecureSettings, lineageSecureSettingList);
+        validate(legacySecureSettings, eunoiaSecureSettingList);
         System.out.println("\n\nValidating " + SettingsConstants.GLOBAL + "...");
-        validate(legacyGlobalSettings, lineageGlobalSettingList);
+        validate(legacyGlobalSettings, eunoiaGlobalSettingList);
         System.exit(0);
     }
 
@@ -150,43 +150,43 @@ class MigrationTest {
         return value;
     }
 
-    private static void validate(ArrayList<Setting> legacySettings, ArrayList<Setting> lineageSettings) {
+    private static void validate(ArrayList<Setting> legacySettings, ArrayList<Setting> eunoiaSettings) {
         Collections.sort(legacySettings);
-        Collections.sort(lineageSettings);
+        Collections.sort(eunoiaSettings);
 
-        if (legacySettings.size() != lineageSettings.size()) {
+        if (legacySettings.size() != eunoiaSettings.size()) {
             System.err.println("Warning: Size mismatch: " + " legacy "
-                    + legacySettings.size() + " lineage " + lineageSettings.size());
+                    + legacySettings.size() + " eunoia " + eunoiaSettings.size());
         }
 
         for (int i = 0; i < legacySettings.size(); i++) {
             Setting legacySetting = legacySettings.get(i);
-            Setting lineageSetting = lineageSettings.get(i);
+            Setting eunoiaSetting = eunoiaSettings.get(i);
             int error = 0;
 
-            System.out.println("Comparing: legacy " + legacySetting.getKey() + " and lineagesetting "
-                    + lineageSetting.getKey());
+            System.out.println("Comparing: legacy " + legacySetting.getKey() + " and eunoiasetting "
+                    + eunoiaSetting.getKey());
 
-            if (!legacySetting.getKey().equals(lineageSetting.getKey())) {
+            if (!legacySetting.getKey().equals(eunoiaSetting.getKey())) {
                 System.err.println("    Key mismatch: " + legacySetting.getKey() + " and "
-                        + lineageSetting.getKey());
+                        + eunoiaSetting.getKey());
                 error = 1;
             }
-            if (!legacySetting.getKeyType().equals(lineageSetting.getKeyType())) {
+            if (!legacySetting.getKeyType().equals(eunoiaSetting.getKeyType())) {
                 System.err.println("    Key type mismatch: " + legacySetting.getKeyType() + " and "
-                        + lineageSetting.getKeyType());
+                        + eunoiaSetting.getKeyType());
                 error = 1;
             }
             if (legacySetting.getValue().length() > 0) {
-                if (!legacySetting.getValue().equals(lineageSetting.getValue())) {
+                if (!legacySetting.getValue().equals(eunoiaSetting.getValue())) {
                     System.err.println("    Value mismatch: " + legacySetting.getValue() + " and "
-                            + lineageSetting.getValue());
+                            + eunoiaSetting.getValue());
                     error = 1;
                 }
             }
-            if (!legacySetting.getValueType().equals(lineageSetting.getValueType())) {
+            if (!legacySetting.getValueType().equals(eunoiaSetting.getValueType())) {
                 System.err.println("    Value type mismatch: " + legacySetting.getValueType()
-                        + " and " + lineageSetting.getValueType());
+                        + " and " + eunoiaSetting.getValueType());
                 error = 1;
             }
 

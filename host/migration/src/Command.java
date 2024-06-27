@@ -49,17 +49,17 @@ public class Command implements Runnable {
     protected static boolean filter(String uri, Setting setting) {
         switch (uri) {
             case SettingsConstants.SYSTEM:
-                if (!LineageSettings.System.isLegacySetting(setting.getKey())) {
+                if (!EunoiaSettings.System.isLegacySetting(setting.getKey())) {
                     return true;
                 }
                 break;
             case SettingsConstants.SECURE:
-                if (!LineageSettings.Secure.isLegacySetting(setting.getKey())) {
+                if (!EunoiaSettings.Secure.isLegacySetting(setting.getKey())) {
                     return true;
                 }
                 break;
             case SettingsConstants.GLOBAL:
-                if (!LineageSettings.Global.isLegacySetting(setting.getKey())) {
+                if (!EunoiaSettings.Global.isLegacySetting(setting.getKey())) {
                     return true;
                 }
                 break;
