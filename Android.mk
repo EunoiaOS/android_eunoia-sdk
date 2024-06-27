@@ -115,7 +115,7 @@ LOCAL_SRC_FILES := $(eunoia_platform_docs_src_files)
 LOCAL_ADDITONAL_JAVA_DIR := $(eunoia_platform_docs_LOCAL_ADDITIONAL_JAVA_DIR)
 
 LOCAL_IS_HOST_MODULE := false
-LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR := vendor/eunoia/build/tools/droiddoc/templates-eunoia-sdk
+LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR := vendor.lineage/build/tools/droiddoc/templates-eunoia-sdk
 LOCAL_ADDITIONAL_DEPENDENCIES := \
     services
 

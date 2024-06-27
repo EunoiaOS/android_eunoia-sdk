@@ -30,22 +30,22 @@ import com.android.internal.util.ArrayUtils;
 
 import eunoiaos.app.EunoiaContextConstants;
 
-import vendor.eunoia.livedisplay.V2_0.IAdaptiveBacklight;
-import vendor.eunoia.livedisplay.V2_0.IAutoContrast;
-import vendor.eunoia.livedisplay.V2_0.IColorBalance;
-import vendor.eunoia.livedisplay.V2_0.IColorEnhancement;
-import vendor.eunoia.livedisplay.V2_0.IDisplayColorCalibration;
-import vendor.eunoia.livedisplay.V2_0.IDisplayModes;
-import vendor.eunoia.livedisplay.V2_0.IPictureAdjustment;
-import vendor.eunoia.livedisplay.V2_0.IReadingEnhancement;
-import vendor.eunoia.livedisplay.V2_0.ISunlightEnhancement;
-import vendor.eunoia.livedisplay.V2_1.IAntiFlicker;
-import vendor.eunoia.touch.V1_0.IGloveMode;
-import vendor.eunoia.touch.V1_0.IHighTouchPollingRate;
-import vendor.eunoia.touch.V1_0.IKeyDisabler;
-import vendor.eunoia.touch.V1_0.IKeySwapper;
-import vendor.eunoia.touch.V1_0.IStylusMode;
-import vendor.eunoia.touch.V1_0.ITouchscreenGesture;
+import vendor.lineage.livedisplay.V2_0.IAdaptiveBacklight;
+import vendor.lineage.livedisplay.V2_0.IAutoContrast;
+import vendor.lineage.livedisplay.V2_0.IColorBalance;
+import vendor.lineage.livedisplay.V2_0.IColorEnhancement;
+import vendor.lineage.livedisplay.V2_0.IDisplayColorCalibration;
+import vendor.lineage.livedisplay.V2_0.IDisplayModes;
+import vendor.lineage.livedisplay.V2_0.IPictureAdjustment;
+import vendor.lineage.livedisplay.V2_0.IReadingEnhancement;
+import vendor.lineage.livedisplay.V2_0.ISunlightEnhancement;
+import vendor.lineage.livedisplay.V2_1.IAntiFlicker;
+import vendor.lineage.touch.V1_0.IGloveMode;
+import vendor.lineage.touch.V1_0.IHighTouchPollingRate;
+import vendor.lineage.touch.V1_0.IKeyDisabler;
+import vendor.lineage.touch.V1_0.IKeySwapper;
+import vendor.lineage.touch.V1_0.IStylusMode;
+import vendor.lineage.touch.V1_0.ITouchscreenGesture;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

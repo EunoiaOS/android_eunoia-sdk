@@ -39,7 +39,7 @@ import eunoiaos.providers.EunoiaSettings;
 import eunoiaos.trust.ITrustInterface;
 import eunoiaos.trust.TrustInterface;
 
-import vendor.eunoia.trust.V1_0.IUsbRestrict;
+import vendor.lineage.trust.V1_0.IUsbRestrict;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
