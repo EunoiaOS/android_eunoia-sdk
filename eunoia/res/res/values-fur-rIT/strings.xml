@@ -16,15 +16,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">Sisteme LineageOS</string>
+    <string name="eunoiaos_system_label">Sisteme EunoiaOS</string>
     <string name="permlab_modifyProfiles">modifiche profîi di sisteme</string>
     <string name="permdesc_modifyProfiles">Al permet a une aplicazion di modificâ i profîi di sisteme.</string>
     <string name="permlab_useHardwareFramework">dopre la suaze di vore hardware</string>
-    <string name="permdesc_useHardwareFramework">Al permet a une aplicazion di acedi ae suaze di lavôr hardware di Lineage.</string>
-    <string name="permlab_writeSettings">modifiche lis impostazions di sisteme di Lineage</string>
-    <string name="permdesc_writeSettings">Al permet a une aplicazion di modificâ lis impostazions di sisteme di Lineage.</string>
-    <string name="permlab_writeSecureSettings">modifiche lis impostazions siguris dal sisteme di Lineage</string>
-    <string name="permdesc_writeSecureSettings">Al permet a une aplicazion di modificâ lis impostazions siguris dal sisteme di Lineage. No doprât da lis aplicazions normâls.</string>
+    <string name="permdesc_useHardwareFramework">Al permet a une aplicazion di acedi ae suaze di lavôr hardware di Eunoia.</string>
+    <string name="permlab_writeSettings">modifiche lis impostazions di sisteme di Eunoia</string>
+    <string name="permdesc_writeSettings">Al permet a une aplicazion di modificâ lis impostazions di sisteme di Eunoia.</string>
+    <string name="permlab_writeSecureSettings">modifiche lis impostazions siguris dal sisteme di Eunoia</string>
+    <string name="permdesc_writeSecureSettings">Al permet a une aplicazion di modificâ lis impostazions siguris dal sisteme di Eunoia. No doprât da lis aplicazions normâls.</string>
     <string name="profileNameDefault">Predefinît</string>
     <string name="profileNameWork">Lavôr</string>
     <string name="profileNameHome">Cjase</string>
@@ -63,10 +63,10 @@
     <string name="permlab_manageRemotePrefs">gjestìs impostazions lontanis</string>
     <string name="permdesc_manageRemotePrefs">Al permet a une aplicazion di gjestî impostazions lontanis.</string>
     <string name="build_date">Date di compilazion</string>
-    <string name="lineage_api_level">Nivel API LineageOS</string>
-    <string name="lineage_updates">Inzornaments di LineageOS</string>
-    <string name="lineage_version">Version di LineageOS</string>
-    <string name="lineage_vendor_security_patch">Nivel dal blec di sigurece dal produtôr</string>
+    <string name="eunoia_api_level">Nivel API EunoiaOS</string>
+    <string name="eunoia_updates">Inzornaments di EunoiaOS</string>
+    <string name="eunoia_version">Version di EunoiaOS</string>
+    <string name="eunoia_vendor_security_patch">Nivel dal blec di sigurece dal produtôr</string>
     <string name="unknown">No cognossût</string>
     <string name="app_killed_message">Aplicazion copade</string>
     <string name="kilobitspersecond_short">kb/s</string>
