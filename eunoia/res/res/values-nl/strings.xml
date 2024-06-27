@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
-                   2017-2022 The.EunoiaOS Project
+                   2024 The EunoiaOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,10 +20,10 @@
     <string name="permlab_modifyProfiles">systeemprofielen wijzigen</string>
     <string name="permdesc_modifyProfiles">Hiermee kan de app systeemprofielen wijzigen.</string>
     <string name="permlab_useHardwareFramework">hardware-framework gebruiken</string>
-    <string name="permdesc_useHardwareFramework">Hiermee kan de app toegang krijgen tot het hardware-framework van.Eunoia.</string>
-    <string name="permlab_writeSettings".Eunoia-systeeminstellingen wijzigen</string>
+    <string name="permdesc_useHardwareFramework">Hiermee kan de app toegang krijgen tot het hardware-framework van Eunoia.</string>
+    <string name="permlab_writeSettings">Eunoia-systeeminstellingen wijzigen</string>
     <string name="permdesc_writeSettings">Staat een app toe de systeeminstellingen van Eunoia te wijzigen.</string>
-    <string name="permlab_writeSecureSettings">beveiligde.Eunoia-systeeminstellingen wijzigen</string>
+    <string name="permlab_writeSecureSettings">beveiligde Eunoia-systeeminstellingen wijzigen</string>
     <string name="permdesc_writeSecureSettings">Hiermee kan de app de beveiligde systeeminstellingen van Eunoia wijzigen. Niet voor gebruik door normale apps.</string>
     <string name="profileNameDefault">Standaard</string>
     <string name="profileNameWork">Werk</string>
@@ -63,7 +63,7 @@
     <string name="permlab_manageRemotePrefs">instellingen voor beheer op afstand</string>
     <string name="permdesc_manageRemotePrefs">Hiermee kan de app instellingen voor beheer op afstand beheren</string>
     <string name="build_date">Build-datum</string>
-    <string name="eunoia_api_level">Niveau van.EunoiaOS-API</string>
+    <string name="eunoia_api_level">Niveau van EunoiaOS-API</string>
     <string name="eunoia_updates">EunoiaOS-updates</string>
     <string name="eunoia_version">EunoiaOS-versie</string>
     <string name="eunoia_vendor_security_patch">Niveau van leveranciers-beveiligingspatch</string>
@@ -73,6 +73,8 @@
     <string name="megabitspersecond_short">Mb/s</string>
     <string name="kilobytespersecond_short">kB/s</string>
     <string name="megabytespersecond_short">MB/s</string>
+    <string name="kilobytespersecond_compact">k</string>
+    <string name="megabytespersecond_compact">M</string>
     <string name="trust_feature_name">Trust</string>
     <string name="permlab_trustInterface">toegang tot Trust-interface</string>
     <string name="permdesc_trustInterface">Staat een app toe waarschuwingen en suggesties van Trust weer te geven</string>
@@ -83,4 +85,11 @@
     <string name="trust_notification_title_onboarding">Ontdek Trust</string>
     <string name="trust_notification_content_onboarding">Leer hoe u de veiligheid van uw apparaat kunt garanderen</string>
     <string name="trust_notification_action_manage">Beheer waarschuwingen</string>
+    <string name="charging_control_notification_channel">Oplaadcontrole</string>
+    <string name="charging_control_notification_title">Oplaadcontrole</string>
+    <string name="charging_control_notification_cancel_once">Annuleer</string>
+    <string name="charging_control_notification_content_limit">Batterij wordt tot %1$d%% opgeladen</string>
+    <string name="charging_control_notification_content_limit_reached">Batterij is opgeladen tot %1$d%%</string>
+    <string name="charging_control_notification_content_target">Batterij zal volledig opgeladen worden op %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Batterij is opgeladen</string>
 </resources>

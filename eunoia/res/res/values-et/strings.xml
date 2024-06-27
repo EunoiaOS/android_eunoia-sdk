@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
-                   2017-2022 The.EunoiaOS Project
+                   2024 The EunoiaOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -21,10 +21,10 @@
     <string name="permdesc_modifyProfiles">Lubab rakendusel süsteemiprofiile muuta.</string>
     <string name="permlab_useHardwareFramework">kasutada riistvara raamistikku</string>
     <string name="permdesc_useHardwareFramework">Annab rakendusele ligipääsu Eunoia riistvara raamistikule.</string>
-    <string name="permlab_writeSettings".Eunoia\'i süsteemiseadete muutmine</string>
-    <string name="permdesc_writeSettings">Lubab rakendusel muuta.Eunoia\'i süsteemiseadeid.</string>
-    <string name="permlab_writeSecureSettings".Eunoia\'i turvaliste süsteemiseadete muutmine</string>
-    <string name="permdesc_writeSecureSettings">Lubab rakendusel muuta.Eunoia\'i turvalisi süsteemiseadeid. Ei ole mõeldud kasutamiseks tavarakendusetel.</string>
+    <string name="permlab_writeSettings">Eunoia\'i süsteemiseadete muutmine</string>
+    <string name="permdesc_writeSettings">Lubab rakendusel muuta Eunoia\'i süsteemiseadeid.</string>
+    <string name="permlab_writeSecureSettings">Eunoia\'i turvaliste süsteemiseadete muutmine</string>
+    <string name="permdesc_writeSecureSettings">Lubab rakendusel muuta Eunoia\'i turvalisi süsteemiseadeid. Ei ole mõeldud kasutamiseks tavarakendusetel.</string>
     <string name="profileNameDefault">Vaikimisi</string>
     <string name="profileNameWork">Töö</string>
     <string name="profileNameHome">Kodu</string>

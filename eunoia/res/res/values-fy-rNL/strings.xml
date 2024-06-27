@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
-                   2017-2022 The.EunoiaOS Project
+                   2024 The EunoiaOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,10 +20,10 @@
     <string name="permlab_modifyProfiles">systeemprofilen wizigje</string>
     <string name="permdesc_modifyProfiles">Hjirmei kin de app systeemprofilen wizigje.</string>
     <string name="permlab_useHardwareFramework">hardware-framework brûke</string>
-    <string name="permdesc_useHardwareFramework">Hjirmei kin de app tagong krije ta it hardware-framework fan.Eunoia.</string>
-    <string name="permlab_writeSettings".Eunoia-systeemynstellingen wizigje</string>
+    <string name="permdesc_useHardwareFramework">Hjirmei kin de app tagong krije ta it hardware-framework fan Eunoia.</string>
+    <string name="permlab_writeSettings">Eunoia-systeemynstellingen wizigje</string>
     <string name="permdesc_writeSettings">Hjirmei kin de app de systeemynstellingen fan Eunoia wizigje.</string>
-    <string name="permlab_writeSecureSettings">befeiligege.Eunoia-systeemynstellingen wizigje</string>
+    <string name="permlab_writeSecureSettings">befeiligege Eunoia-systeemynstellingen wizigje</string>
     <string name="permdesc_writeSecureSettings">Hjirmei kin de app de befeilige systeemynstellingen fan Eunoia wizigje. Net foar gebrûk troch normale apps.</string>
     <string name="profileNameDefault">Standert</string>
     <string name="profileNameWork">Wurk</string>
